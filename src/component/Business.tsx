@@ -1,7 +1,7 @@
 import React, { FC, useState, ChangeEvent } from "react";
 import { ITask } from "./Interfaces";
 import TodoTask from "./TodoTask";
-const Body: FC = () => {
+const  Business: FC = () => {
   const [task, setTask] = useState<string>("");
   const [deadline, setDeadline] = useState<string>("");
   const [todoList, setTodoList] = useState<ITask[]>([]);
@@ -33,6 +33,7 @@ const Body: FC = () => {
       <section className=" bg-amazon_blue px-12 md:pt-12 pb-12 lg:pt-32 md:px-20 lg:px-28 flex items-center justify-center">
         <div className=" bg-white mt-24  p-12 lg:w-[800px] w-[318px] md:w-[600px] px-3   container mx-auto xl:-mt-72 shadow-lg flex flex-col items-center justify-center shadow-white rounded-lg md:mt-12 lg:mt-0 ">
           {/* ================================================================================ */}
+          <p className=" font-semibold text-2xl">Business</p>
           <div className=" flex md:gap-x-6 flex-col md:flex-row gap-y-3">
             <input
               type="text"
@@ -63,4 +64,12 @@ const Body: FC = () => {
   );
 };
 
-export default Body;
+export default  Business;
+
+
+
+
+
+
+ 
+
